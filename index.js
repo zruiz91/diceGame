@@ -1,12 +1,19 @@
 function rando() {
-    let randomNumber1 = Math.random() * 6;
-randomNumber1 = Math.floor(randomNumber1) + 1;
-console.log(randomNumber1);
+    
 }
 
 
 let randomNumber1 = Math.random() * 6;
 randomNumber1 = Math.floor(randomNumber1) + 1;
+
+
+if (randomNumber1 > randomNumber2) {
+    document.querySelector('div h1').innerHTML = "Player 1 Wins!";
+} else if (randomNumber1 < randomNumber2) {
+    document.querySelector('div h1').innerHTML = "Player 2 Wins!";
+} else {
+    document.querySelector('div h1').innerHTML = "Draw!";
+}
 
 if (randomNumber1 === 1) {
     document.querySelector("img.img1").setAttribute("src", "images/dice1.png");
